@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html> <!--  comment -->
+<head>
+<title>Django App</title>
+</head>
+<body>
+	<div>
+		<h1>Welcome to the {{ title }}</h1>
+		<h3> Your Return on Investment is {{ roi }}</h3>
+	</div>
+	<div>
+		<h3>Available States</h3>
+		<ul>
+			{% for state in states %}
+			<li>{{ state }}</li>
+			{% endfor %}
+		</ul>
+	</div>
+	<br>
+	<br>
+
+</body>
+</html>
